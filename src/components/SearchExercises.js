@@ -42,6 +42,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       setExercises(searchedExercises);
     }
   };
+
   return (
     <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
       <Typography
@@ -50,9 +51,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         mb="49px"
         textAlign="center"
       >
-        Awesome Exercises You
-        <br />
-        Should Know
+        Awesome Exercises You <br /> Should Know
       </Typography>
       <Box position="relative" mb="72px">
         <TextField
@@ -88,6 +87,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       <Box sx={{ position: "relative", width: "100%", p: "20px" }}>
         <HorizontalScrollbar
           data={bodyParts}
+          bodyParts
           setBodyPart={setBodyPart}
           bodyPart={bodyPart}
         />
